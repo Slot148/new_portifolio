@@ -1,0 +1,157 @@
+body {
+  background: url("assets/anime-9063542.svg") no-repeat center/cover fixed;
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ico{
+margin: 2%;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.skill-item:hover{
+  transform: translateY(-5px) translateX(-10px);
+  background: rgba(123, 147, 236, 0.053);
+}
+.skill-item:active{
+  transform: translateY(2px) translateX(2px);
+}
+
+
+.colunas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(185, 188, 192, 0);
+  padding: 20px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.about-me{
+  flex:1;
+}
+.main-content{
+  flex: 2;
+}
+
+.section {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(162, 174, 185, 0);
+  padding: 20px;
+  margin: 1%;
+}
+
+header {
+  justify-content: center;
+  font-size: 28px;
+  display: flex;
+}
+
+.menu {
+  justify-self: right;
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin: 0;
+}
+
+li {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav {
+  background-color: yellow;
+  padding: 0;
+  color: #c4baba;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: gray;
+  background: url(assets/stars-13910_256.gif);
+}
+
+.glass {
+  background: rgba(164, 158, 158, 0.064);
+  backdrop-filter: grayscale(1);
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .colunas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 0;
+  }
+
+  aside {
+    width: auto;
+    height: auto;
+    margin: 10px 10px 0 10px;
+  }
+
+  .main-content {
+    height: auto;
+  }
+
+  .section {
+    margin: 0 10px 10px 10px;
+  }
+
+  figure img {
+    width: 150px;
+  }
+
+  nav ol {
+    justify-content: space-around;
+  }
+
+  nav li {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  aside,
+  main,
+  .section {
+    padding: 15px;
+  }
+
+  figure img {
+    width: 120px;
+  }
+}
