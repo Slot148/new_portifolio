@@ -58,19 +58,31 @@
         <div class="section"></div>
       </section>
 
-      <section class="section glass">
-        <h3>Contato:</h3>
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome">
-        <br>
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email">
-        <br>
-        <label for="mensagem">mensagem:</label><br>
-        <textarea name="msg" id="mensagem"></textarea>
 
+      <section class="colunas">
+        <section class="section glass" style="flex: 2;">
+          <h3>Contato:</h3>
+          <form action="">
+            <label for="nome">Nome:</label><br>
+            <input class="glass input" type="text" name="nome" id="nome">
+            <br>
+            <label for="email">Email:</label><br>
+            <input class="glass input" type="email" name="email" id="email">
+            <br>
+            <label for="mensagem">mensagem:</label><br>
+            <textarea class="glass input" style="height: 90px;" name="msg" id="mensagem"></textarea>
+            <input type="submit" value="Enviar" class="glass input" style="width: 20%; color: #f0f0f0">
+          </form>
+        </section>
+        <section class="section glass" style="flex: 3;">
+          <h3>Info:</h3>
+          <h4>Nome:</h4>
+            <p>Nicolas Anderson Ferreira Freitas</p>
+          <h4>Email:</h4> 
+            <p>nicolasferreira.work2005@gmail.com</p>
+        </section>
       </section>
 
-    <footer style="background-color: #6077a569;" class="glass">Todos os direitos reservados, 2025</footer>
+    <footer style="background-color: #6077a569;" class="glass"> &copy Todos os direitos reservados, 2025</footer>
   </body>
 </html>
