@@ -4,85 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <title>Portifolio</title>
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="assets/favicon.ico" />
+    <title>Portfólio Nicolas Freitas</title>
   </head>
 
   <body>
-    <header class="glass" style="background-color: #6077a569;">
-      <h1>Portifólio</h1>
+    <button id="theme-toggle" class="glass" style="display: flex; align-items: center; "><img src="assets/proicons--dark-theme.svg" alt="mudar tema"></button>
+    <button id="back-to-top" class="glass"><img src="assets/bxs--up-arrow.svg" alt="voltar para o topo"></button>
+    <header class="glass section">
+      <div style="align-items: center; display: flex; flex-direction: column;">
+        <h1>Nicolas Anderson Ferreira Freitas</h1>
+        <p>Cursando Análise e Desenvolvimento de Sistemas</p>
+      </div>
     </header>
-    <nav class="glass" style="background-color: #3b418456;">
+    <nav class="section" style="padding: 0; margin-top: 0; margin-bottom: 0;">
       <ol>
-        <li type="none">About-me</li>
-        <li type="none">Projects</li>
-        <li type="none">Contact</li>
+        <li type="none"><a href="#sobre">Sobre Mim</a></li>
+        <li type="none"><a href="#habilidades">Habilidades</a></li>
+        <li type="none"><a href="#projetos">Projetos</a></li>
+        <li type="none"><a href="#contato">Contato</a></li>
       </ol>
     </nav>
-    <section class="colunas" style="padding-top: 1%">
-      <div>
-        
-      </div>
-      <aside class="display about-me glass"">
-        <h3>About Me:</h3>
+    
+    <section id="sobre" class="colunas" style="padding-top: 1%">
+      <aside class="display about-me glass">
+        <h2>Sobre Mim:</h2>
         <figure style="margin: 0">
           <img
             src="assets/IMG_20240904_065935_237.jpg"
             style="width: 200px; border-radius: 50%; margin: 5px"
+            alt="Foto de Nicolas Freitas"
           />
         </figure>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          semper est arcu, eget porttitor tellus laoreet sed. Donec consectetur
-          sollicitudin augue, non sodales mauris bibendum lobortis. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas. Proin placerat eget arcu id viverra. Mauris varius
-          porttitor nisi, eleifend venenatis urna elementum cursus. Mauris
-          auctor felis libero, id faucibus enim bibendum eget.
+          Sou estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia e desenvolvimento de software. 
+          Meu objetivo é me especializar em desenvolvimento full-stack, criando soluções inovadoras que impactem 
+          positivamente a vida das pessoas.
         </p>
+        <h3>Formação Acadêmica:</h3>
+        <p>Análise e Desenvolvimento de Sistemas - FATEC (2024-2026)</p>
+        <h3>Certificações:</h3>
+        <ul>
+          <li>Certificação em Desenvolvimento Web - Udemy</li>
+        </ul>
+
+        <h3>Participações Acadêmicas:</h3>
+        <ul>
+          <li>
+            Participação no <strong>2° Science and Business Connection (2024)</strong> — Apresentei o artigo <em>"O Impacto das Inteligências Artificiais no Mercado de Trabalho"</em>.
+          </li>
+        </ul>
       </aside>
+      
       <div class="main-content">
-        <main class="display glass">
-          <h3>Habilidades:</h3>
-          <div class="section skill-item"><img class="ico" src="assets/simple-icons--html5 (1).svg"><span>HTML</span></div>
-          <div class="section skill-item"><img class="ico" src="assets/simple-icons--css3.svg"><span>CSS</span></div>
-          <div class="section skill-item"><img class="ico" src="assets/simple-icons--javascript.svg"><span>Javascript</span></div>
-          <div class="section skill-item"><img class="ico" src="assets/simple-icons--python.svg"><span>Python</span></div>
-          <div class="section skill-item"><img class="ico" src="assets/simple-icons--c.svg"><span>C</span></div>
+        <main id="habilidades" class="display glass">
+          <h2>Habilidades Técnicas:</h2>
+          <h3>Hard Skills:</h3>
+          <div style="display: flex; justify-content: center; flex-wrap: wrap; padding: 0 7%;">
+            <img class="ico section skill-item" src="assets/simple-icons--html5 (1).svg" alt="HTML5">
+            <img class="ico section skill-item" src="assets/simple-icons--css3.svg" alt="CSS3">
+            <img class="ico section skill-item" src="assets/simple-icons--javascript.svg" alt="JavaScript">
+            <img class="ico section skill-item" src="assets/simple-icons--python.svg" alt="Python">
+            <img class="ico section skill-item" src="assets/simple-icons--c.svg" alt="Linguagem C">
+            <img class="ico section skill-item" src="assets/simple-icons--git.svg" alt="git">
+            <img class="ico section skill-item" src="assets/simple-icons--nodedotjs.svg" alt="nodejs">
+            <img class="ico section skill-item" src="assets/simple-icons--npm.svg" alt="npm">
+            <img class="ico section skill-item" src="assets/simple-icons--sqlite.svg" alt="sqlite">
+            <img class="ico section skill-item" src="assets/simple-icons--mysql.svg" alt="mysql">
+            <img class="ico section skill-item" src="assets/simple-icons--linux.svg" alt="linux">
+          </div>
+          <h3>Soft Skills:</h3>
+          <div class="colunas" style="justify-content: center;">
+            <span class="skill-item glass section">Trabalho em equipe</span>
+            <span class="skill-item glass section">Resolução de problemas</span>
+            <span class="skill-item glass section">Aprendizado eficaz</span>
+            <span class="skill-item glass section">Proatividade</span>
+            <span class="skill-item glass section">Comunicação eficaz</span>
+            <span class="skill-item glass section">Adaptabilidade</span>
+            <span class="skill-item glass section">Resiliencia</span>
+          </div>
         </main>
+        <div class="display glass">
+          <h2>Interesses & Objetivos</h2>
+          <p><strong>Foco Atual:</strong> Desenvolvimento Full-Stack.</p>
+          <p><strong>Interesses:</strong> Linux, open-source.</p>
+          <h3>Idiomas:</h3>
+          <ul style="margin: 0;">
+            <li>Português (Nativo)</li>
+            <li>Inglês (Intermediário)</li>
+          </ul>
+        </div>
+    </section>
+
+    <section id="projetos" class="section glass">
+      <h2>Projetos Destacados:</h2>
+      
+      <div class="project-item glass" style="margin: 20px 0; padding: 15px;">
+        <h3>Sistema de Gerenciamento de Atestados e Equipes Ágeis</h3>
+        <p>Desenvolvi um sistema completo para gestão de atestados e equipes ágeis(principalmente backend).</p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, Python, Flask</p>
+        <p><strong>Desafios:</strong> Implementar persistência de dados local, responsividade e geração de relatórios</p>
+        <p><strong>Soluções:</strong> Utilizei JSON com crud básico para armazenar dados e caminhos necessários(informações de usuário e caminhos para documentos enviados)</p>
+        <a href="#" class="glass" style="display: inline-block; padding: 5px 10px; text-decoration: none; border-radius: 5px;">Ver Projeto</a>
+      </div>
+      
+      <div class="project-item glass" style="margin: 20px 0; padding: 15px;">
+        <h3>Site Pessoal (Este portfólio)</h3>
+        <p>Desenvolvimento deste portfólio responsivo com efeitos visuais modernos.</p>
+        <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, Glassmorphism</p>
+        <p><strong>Desafios:</strong> Criar design responsivo para múltiplos dispositivos</p>
+        <p><strong>Soluções:</strong> Media queries e flexbox para layout adaptável</p>
       </div>
     </section>
 
-      <section class="section glass">
-        <h3>Projetos:</h3>
-        <div class="section"></div>
+    <section class="section glass" >
+      <h2>Trabalhos Acadêmicos:</h2>
+      <div class="glass project-item" style="margin: 20px 0; padding: 15px;">
+        <h3>O Impacto das Inteligências Artificiais no Mercado de Trabalho</h3>
+    <p>
+      Artigo apresentado no <strong>2° Science and Business Connection (2024)</strong> explorando os efeitos da adoção de IAs nas dinâmicas do mercado. <br>
+      O trabalho abordou dados de empregabilidade, automação e novas oportunidades de carreira impulsionadas por tecnologias emergentes. <br>
+      A experiência me permitiu aprimorar habilidades de pesquisa, argumentação e apresentação científica, além de fortalecer minha paixão por inovação tecnológica.
+    </p>
+    <p style="background-color: none;">
+      <strong>Link:</strong>
+      <a href="https://www.even3.com.br/anais/2-science-business-connection-407088/819151-o-impacto-das-inteligencias-artificias-no-mercado-de-trabalho" target="_blank" style="text-decoration: underline dotted; background-color: none;">
+        Leia nos anais do evento
+      </a>
+    </p>
+      </div>
+    </section>
+
+    <section class="colunas">
+      <section class="section glass" style="flex: 3;">
+        <h2>Informações de Contato:</h2>
+        <div class="contact-info">
+          <h4>Email:</h4>
+          <p>
+            <a href="mailto:nicolasferreira.work2005@gmail.com?subject=Contato%20do%20Portfólio&body=Olá%20Nicolas,%20vim%20pelo%20seu%20portfólio..."
+              class="hover-effect">
+              nicolasferreira.work2005@gmail.com
+            </a>
+          </p>
+          
+          <h4>LinkedIn:</h4>
+          <p><a href="https://www.linkedin.com/in/nicolas-anderson-34b082302/" target="_blank">Nicolas Anderson</a></p>
+          
+          <h4>GitHub:</h4>
+          <p><a href="https://github.com/slot148" target="_blank">slot148</a></p>
+        </div>
       </section>
-
-
-      <section class="colunas">
-        <section class="section glass" style="flex: 2;">
-          <h3>Contato:</h3>
-          <form action="">
-            <label for="nome">Nome:</label><br>
-            <input class="glass input" type="text" name="nome" id="nome">
-            <br>
-            <label for="email">Email:</label><br>
-            <input class="glass input" type="email" name="email" id="email">
-            <br>
-            <label for="mensagem">mensagem:</label><br>
-            <textarea class="glass input" style="height: 90px;" name="msg" id="mensagem"></textarea>
-            <input type="submit" value="Enviar" class="glass input" style="width: 20%; color: #f0f0f0">
-          </form>
-        </section>
-        <section class="section glass" style="flex: 3;">
-          <h3>Info:</h3>
-          <h4>Nome:</h4>
-            <p>Nicolas Anderson Ferreira Freitas</p>
-          <h4>Email:</h4> 
-            <p>nicolasferreira.work2005@gmail.com</p>
-        </section>
+      <section id="contato" class="section glass" style="flex: 2;">
+        <h2>Contato:</h2>
+        <form action="">
+          <label for="nome">Nome:</label><br>
+          <input class="glass input" type="text" name="nome" id="nome" required>
+          <br>
+          <label for="email">Email:</label><br>
+          <input class="glass input" type="email" name="email" id="email" required>
+          <br>
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea class="glass input" style="height: 90px;" name="msg" id="mensagem" required></textarea>
+          <input type="submit" value="Enviar" class="glass input" style="width: 20%; color: #f0f0f0">
+        </form>
       </section>
+    </section>
+      
 
-    <footer style="background-color: #6077a569;" class="glass"> &copy Todos os direitos reservados, 2025</footer>
+    <footer class="glass"> 
+      &copy; Todos os direitos reservados, 2025 | Atualizado em maio/2025
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
