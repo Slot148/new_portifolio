@@ -16,6 +16,11 @@
   --font-color: #333;
   --background-image: url("assets/background2.png") no-repeat center/cover fixed;
   --filter-default: brightness(0.9) invert(1) hue-rotate(180deg);
+
+  .input{
+    background-color: var(--header-color1);
+  }
+
 }
 
 body {
@@ -38,14 +43,6 @@ body::before {
   z-index: -1;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--nav-color1);
-    backdrop-filter: blur(5px);
-    padding: 0;
-}
 
 .skill-item {
   align-items: center;
@@ -143,8 +140,13 @@ a:hover{
 }
 
 nav {
-  padding: 0;
-  color: var(--font-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--nav-color1);
+    backdrop-filter: blur(5px);
+    padding: 0;
+    color: var(--font-color);
 }
 
 nav > ol{
@@ -231,7 +233,7 @@ footer {
   background-color: var(--void-display-color);
 }
 .input:focus{
-  background-color: var(--void-display-color);
+  background-color: none;
 }
 
 input[type="text"], input[type="email"]{

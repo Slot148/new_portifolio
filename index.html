@@ -7,10 +7,14 @@
     <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="assets/favicon.ico" />
     <title>Portfólio Nicolas Freitas</title>
   </head>
-
+  
   <body>
-    <button id="theme-toggle" class="glass" style="display: flex; align-items: center; "><img src="assets/proicons--dark-theme.svg" alt="mudar tema"></button>
-    <button id="back-to-top" class="glass"><img src="assets/bxs--up-arrow.svg" alt="voltar para o topo"></button>
+    
+    <aside aria-label="Acessibilidade">
+      <button id="theme-toggle" class="glass" style="display: flex; align-items: center; "><img src="assets/proicons--dark-theme.svg" alt="mudar tema"></button>
+      <button id="back-to-top" class="glass"><img src="assets/bxs--up-arrow.svg" alt="voltar para o topo"></button>
+    </aside>
+
     <header class="glass section">
       <div style="align-items: center; display: flex; flex-direction: column;">
         <h1>Nicolas Anderson Ferreira Freitas</h1>
@@ -56,11 +60,11 @@
         </ul>
       </aside>
       
-      <div class="main-content">
-        <main id="habilidades" class="display glass">
+      <main class="main-content">
+        <section id="habilidades" class="display glass">
           <h2>Habilidades Técnicas:</h2>
           <h3>Hard Skills:</h3>
-          <div style="display: flex; justify-content: center; flex-wrap: wrap; padding: 0 7%;">
+          <section aria-label="hard-skills" style="display: flex; justify-content: center; flex-wrap: wrap; padding: 0 7%;">
             <img class="ico section skill-item" src="assets/simple-icons--html5 (1).svg" alt="HTML5">
             <img class="ico section skill-item" src="assets/simple-icons--css3.svg" alt="CSS3">
             <img class="ico section skill-item" src="assets/simple-icons--javascript.svg" alt="JavaScript">
@@ -72,9 +76,9 @@
             <img class="ico section skill-item" src="assets/simple-icons--sqlite.svg" alt="sqlite">
             <img class="ico section skill-item" src="assets/simple-icons--mysql.svg" alt="mysql">
             <img class="ico section skill-item" src="assets/simple-icons--linux.svg" alt="linux">
-          </div>
+          </section>
           <h3>Soft Skills:</h3>
-          <div class="colunas" style="justify-content: center;">
+          <section aria-label="soft-skills" class="colunas" style="justify-content: center;">
             <span class="skill-item glass section">Trabalho em equipe</span>
             <span class="skill-item glass section">Resolução de problemas</span>
             <span class="skill-item glass section">Aprendizado eficaz</span>
@@ -82,9 +86,9 @@
             <span class="skill-item glass section">Comunicação eficaz</span>
             <span class="skill-item glass section">Adaptabilidade</span>
             <span class="skill-item glass section">Resiliencia</span>
-          </div>
-        </main>
-        <div class="display glass">
+          </section>
+        </section>
+        <section aria-label="Interesses e Objetivos" class="display glass">
           <h2>Interesses & Objetivos</h2>
           <p><strong>Foco Atual:</strong> Desenvolvimento Full-Stack.</p>
           <p><strong>Interesses:</strong> Linux, open-source.</p>
@@ -93,33 +97,33 @@
             <li>Português (Nativo)</li>
             <li>Inglês (Intermediário)</li>
           </ul>
-        </div>
+        </section>
     </section>
 
     <section id="projetos" class="section glass">
       <h2>Projetos Destacados:</h2>
       
-      <div class="project-item glass" style="margin: 20px 0; padding: 15px;">
+      <article class="project-item glass" style="margin: 20px 0; padding: 15px;">
         <h3>Sistema de Gerenciamento de Atestados e Equipes Ágeis</h3>
         <p>Desenvolvi um sistema completo para gestão de atestados e equipes ágeis(principalmente backend).</p>
         <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript, Python, Flask</p>
         <p><strong>Desafios:</strong> Implementar persistência de dados local, responsividade e geração de relatórios</p>
         <p><strong>Soluções:</strong> Utilizei JSON com crud básico para armazenar dados e caminhos necessários(informações de usuário e caminhos para documentos enviados)</p>
-        <a href="#" class="glass" style="display: inline-block; padding: 5px 10px; text-decoration: none; border-radius: 5px;">Ver Projeto</a>
-      </div>
+        <a href="https://github.com/Y2K-Systems/Projeto-Integrador-2025-1" class="glass" style="display: inline-block; padding: 5px 10px; text-decoration: none; border-radius: 5px;">Ver Projeto</a>
+      </article>
       
-      <div class="project-item glass" style="margin: 20px 0; padding: 15px;">
+      <article class="project-item glass" style="margin: 20px 0; padding: 15px;">
         <h3>Site Pessoal (Este portfólio)</h3>
         <p>Desenvolvimento deste portfólio responsivo com efeitos visuais modernos.</p>
         <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, Glassmorphism</p>
         <p><strong>Desafios:</strong> Criar design responsivo para múltiplos dispositivos</p>
         <p><strong>Soluções:</strong> Media queries e flexbox para layout adaptável</p>
-      </div>
+      </article>
     </section>
 
     <section class="section glass" >
       <h2>Trabalhos Acadêmicos:</h2>
-      <div class="glass project-item" style="margin: 20px 0; padding: 15px;">
+      <article class="glass project-item" style="margin: 20px 0; padding: 15px;">
         <h3>O Impacto das Inteligências Artificiais no Mercado de Trabalho</h3>
     <p>
       Artigo apresentado no <strong>2° Science and Business Connection (2024)</strong> explorando os efeitos da adoção de IAs nas dinâmicas do mercado. <br>
@@ -132,40 +136,41 @@
         Leia nos anais do evento
       </a>
     </p>
-      </div>
+      </article>
     </section>
 
     <section class="colunas">
       <section class="section glass" style="flex: 3;">
         <h2>Informações de Contato:</h2>
-        <div class="contact-info">
-          <h4>Email:</h4>
+        <address class="contact-info">
           <p>
+            Email:
             <a href="mailto:nicolasferreira.work2005@gmail.com?subject=Contato%20do%20Portfólio&body=Olá%20Nicolas,%20vim%20pelo%20seu%20portfólio..."
               class="hover-effect">
               nicolasferreira.work2005@gmail.com
             </a>
           </p>
-          
-          <h4>LinkedIn:</h4>
-          <p><a href="https://www.linkedin.com/in/nicolas-anderson-34b082302/" target="_blank">Nicolas Anderson</a></p>
-          
-          <h4>GitHub:</h4>
-          <p><a href="https://github.com/slot148" target="_blank">slot148</a></p>
-        </div>
+          <p>LinkedIn:<a href="https://www.linkedin.com/in/nicolas-anderson-34b082302/" target="_blank">Nicolas Anderson</a></p>
+          <p>GitHub:<a href="https://github.com/slot148" target="_blank">slot148</a></p>
+        </address>
       </section>
       <section id="contato" class="section glass" style="flex: 2;">
         <h2>Contato:</h2>
-        <form action="">
+        <form action="https://formsubmit.co/90d17c05750c8ff97c90acd4b700910f" method="post">
           <label for="nome">Nome:</label><br>
-          <input class="glass input" type="text" name="nome" id="nome" required>
+          <input class="glass input" type="text" name="nome" placeholder="Seu nome aqui!" id="nome" required>
           <br>
           <label for="email">Email:</label><br>
-          <input class="glass input" type="email" name="email" id="email" required>
+          <input class="glass input" type="email" name="email" id="email" placeholder="Seu email aqui!" required>
           <br>
           <label for="mensagem">Mensagem:</label><br>
-          <textarea class="glass input" style="height: 90px;" name="msg" id="mensagem" required></textarea>
-          <input type="submit" value="Enviar" class="glass input" style="width: 20%; color: #f0f0f0">
+          <textarea class="glass input" style="height: 90px;" name="msg" id="mensagem" placeholder="Algo a me dizer?" required></textarea>
+          <input type="submit" class="glass input" style="width: 20%;">
+          <input type= "hidden" name= "_captcha" value="false">
+          <input type= "hidden" name= "_subject" value="Novo envio!">
+          <input type= "hidden" name= "_template" value= "basic">
+          <input type= "hidden" name= "_autoresponse" value= "Obrigado por entrar em contato! Retornarei assim que possivel">
+          <input type="text" name="_honey" style="display:none">
         </form>
       </section>
     </section>
