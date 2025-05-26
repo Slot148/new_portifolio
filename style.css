@@ -16,11 +16,7 @@
   --font-color: #333;
   --background-image: url("assets/background2.png") no-repeat center/cover fixed;
   --filter-default: brightness(0.9) invert(1) hue-rotate(180deg);
-
-  .input{
-    background-color: var(--header-color1);
-  }
-
+  --filter-default-hover: brightness(0.7) invert(0);
 }
 
 body {
@@ -233,7 +229,7 @@ footer {
   background-color: var(--void-display-color);
 }
 .input:focus{
-  background-color: none;
+  background-color: var(--void-display-color);
 }
 
 input[type="text"], input[type="email"]{
@@ -343,4 +339,13 @@ button img{
 }
 button img:hover{
   filter: var(--filter-default-hover);
+}
+
+.contact-info a {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--font-color);
+  transition: border-color 0.3s ease;
+}
+.contact-info a:hover {
+  border-bottom-color: var(--font-color-hover);
 }
