@@ -19,6 +19,26 @@
   --filter-default-hover: brightness(0.7) invert(0);
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  will-change: scroll-position;
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 100px;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    scroll-margin-top: 100px;
+  }
+}
+
 body {
   background: var(--background-image);
   margin: 0;
